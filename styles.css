@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: rgb(0, 0, 0);
+    color: white;
+    overflow: hidden;
+  }
+  
+  .editor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(40, 44, 52, 0.85); /* Dark background for the code editor area */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .code .line {
+    font-family: 'Consolas', 'Monaco', monospace;
+    color: #abb2bf; /* Light grey color for regular code */
+  }
+  
+  .variable {
+    color: #e5c07b; /* Variable color */
+  }
+  
+  .new {
+    color: #61afef; /* 'new' keyword color */
+  }
+  
+  .string {
+    color: #98c379; /* String color */
+  }
+  
+  .number {
+    color: #d19a66; /* Number color */
+  }
+  
+  .output {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .output p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff66a1; /* Pink color for the text */
+    text-align: center;
+    z-index: 10;
+  }
+
+  .output p1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff66a1; /* Pink color for the text */
+    text-align: center;
+    z-index: 10;
+  }
+
+  #hearts-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .heart {
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+    animation: floatUp linear infinite;
+    will-change: transform, opacity;
+  }
+  
+  /* Different heart styles could be added here */
+  .heart-style-1 {
+    background-image: url('HEART.png');
+  }
+  
+  .heart-style-2 {
+    background-image: url('HEART1.png');
+  }
+  
+  .heart-style-3 {
+    background-image: url('HEART2.png');
+  }
+
+  .heart-style-4 {
+    background-image: url('HEART3.png');
+  }
+  
+  .heart-style-5 {
+    background-image: url('HEART4.png');
+  }
+  
+
+  
+  @keyframes floatUp {
+    0% {
+      transform: scale(0) translateY(100vh);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) translateY(-100vh);
+      opacity: 0;
+    }
+  }
+  
